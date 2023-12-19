@@ -1,0 +1,47 @@
+body {
+    min-height: 100vh;
+}
+
+section {
+    display: grid;
+    grid-template:
+        "header picture" 200px
+        "main picture" 600px/ 50em 610px;
+    background: url(../images/bg-pattern-desktop.svg), var(--linear-gradient-1) center center;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+header {
+    grid-area: header;
+    width: auto;
+    margin-left: 10em;
+}
+
+header img {
+    width: 15em;
+}
+
+picture {
+    grid-area: picture;
+}
+
+main {
+    grid-area: main;
+    text-align: left;
+    margin-left: 5em;
+    width: 40em;
+}
+
+main h1 {
+    font-size: 4em;
+    letter-spacing: 0.4em;
+}
+
+main p {
+    font-size: 1.5em;
+}
+
+form input {
+    width: 35em;
+}
